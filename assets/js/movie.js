@@ -1,13 +1,33 @@
+// check mobile or pc
+var isMobile = false
+var widthSize = window.matchMedia("(max-width:1023px)")
+if (widthSize.matches) {
+    console.log("Mobile")
+    var isMobile = true
+}
+else {
+    console.log("PC")
+    var isMobile = false
+}
+
+
 // your name
 function your_name()
 {
     var tap = 'full'
     var getLink = `https://1080.hdphimonline.com/share/4d6b3e38b952600251ee92fe603170ff`
-    var getBtn = document.querySelector(`.btn-controller-${tap}`)
-    var getMovieScreen = document.querySelector(".movie-screen")
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(".movie-screen")
 
-    getBtn.className = `btn btn-success .btn-controller-${tap} active`
-    getMovieScreen.setAttribute("src", getLink)
+    if (isMobile == false) {
+        getBtn[0].className = `btn btn-success .btn-controller-${tap} active`
+        getMovieScreen[0].setAttribute("src", getLink)
+    }
+    else if (isMobile == true) {
+        getBtn[1].className = `btn btn-success .btn-controller-${tap} active`
+        getMovieScreen[1].setAttribute("src", getLink)
+    }
+    
 }
 
 // that nghiep chuyen sinh
@@ -25,12 +45,17 @@ function that_nghiep_chuyen_sinh_p1_t1()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t2()
@@ -42,12 +67,17 @@ function that_nghiep_chuyen_sinh_p1_t2()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t3()
@@ -59,12 +89,17 @@ function that_nghiep_chuyen_sinh_p1_t3()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t4()
@@ -76,12 +111,17 @@ function that_nghiep_chuyen_sinh_p1_t4()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t5()
@@ -93,12 +133,17 @@ function that_nghiep_chuyen_sinh_p1_t5()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t6()
@@ -110,12 +155,17 @@ function that_nghiep_chuyen_sinh_p1_t6()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t7()
@@ -127,12 +177,17 @@ function that_nghiep_chuyen_sinh_p1_t7()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t8()
@@ -144,12 +199,17 @@ function that_nghiep_chuyen_sinh_p1_t8()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t9()
@@ -161,12 +221,17 @@ function that_nghiep_chuyen_sinh_p1_t9()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t10()
@@ -178,12 +243,17 @@ function that_nghiep_chuyen_sinh_p1_t10()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t11()
@@ -195,12 +265,17 @@ function that_nghiep_chuyen_sinh_p1_t11()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t12()
@@ -212,12 +287,17 @@ function that_nghiep_chuyen_sinh_p1_t12()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t13()
@@ -229,12 +309,17 @@ function that_nghiep_chuyen_sinh_p1_t13()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t14()
@@ -246,12 +331,17 @@ function that_nghiep_chuyen_sinh_p1_t14()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t15()
@@ -263,12 +353,17 @@ function that_nghiep_chuyen_sinh_p1_t15()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t16()
@@ -280,12 +375,17 @@ function that_nghiep_chuyen_sinh_p1_t16()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t17()
@@ -297,12 +397,17 @@ function that_nghiep_chuyen_sinh_p1_t17()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t18()
@@ -314,12 +419,17 @@ function that_nghiep_chuyen_sinh_p1_t18()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t19()
@@ -331,12 +441,17 @@ function that_nghiep_chuyen_sinh_p1_t19()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t20()
@@ -348,12 +463,17 @@ function that_nghiep_chuyen_sinh_p1_t20()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t21()
@@ -365,12 +485,17 @@ function that_nghiep_chuyen_sinh_p1_t21()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t22()
@@ -382,12 +507,17 @@ function that_nghiep_chuyen_sinh_p1_t22()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t23()
@@ -399,12 +529,17 @@ function that_nghiep_chuyen_sinh_p1_t23()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function that_nghiep_chuyen_sinh_p1_t24()
@@ -416,12 +551,17 @@ function that_nghiep_chuyen_sinh_p1_t24()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 // nang noi loan x chang tho may
@@ -439,12 +579,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t1()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t2()
@@ -456,12 +601,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t2()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t3()
@@ -473,12 +623,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t3()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t4()
@@ -490,12 +645,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t4()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t5()
@@ -507,12 +667,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t5()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t6()
@@ -524,12 +689,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t6()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t7()
@@ -541,12 +711,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t7()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t8()
@@ -558,12 +733,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t8()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t9()
@@ -575,12 +755,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t9()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t10()
@@ -592,12 +777,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t10()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t11()
@@ -609,12 +799,17 @@ function nang_noi_loan_x_chang_tho_may_p1_t11()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
 
 function nang_noi_loan_x_chang_tho_may_p1_t12()
@@ -626,10 +821,306 @@ function nang_noi_loan_x_chang_tho_may_p1_t12()
     var getMovieScreen = document.querySelectorAll(`.movie-screen`)
     var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
 
-    getMovieScreen[0].setAttribute("src", getLink)
-    getMovieScreen[1].setAttribute("src", getLink)
-    getBtn[0].className = `btn btn-success btn-controller-${tap} active`
-    getBtn[1].className = `btn btn-success btn-controller-${tap} active`
-    getMovieEpisode[0].innerText = getTap
-    getMovieEpisode[1].innerText = getTap
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+// Kaguya-sama wa Kokurasetai: Ultra Romantic
+
+var api_kaguya_sama_wa_kokurasetai_ultra_romantic = `{"status":true,"msg":"","movie":{"modified":{"time":"2022-07-02T02:48:49.000Z"},"_id":"6267c717489068f643a25c8a","name":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic","origin_name":"Kaguya-sama wa Kokurasetai: Tensai-tachi no Ren'ai Zunousen - Ultra Romantic","content":"<p>Tiếp nối mùa 2, câu chuyện xoay quanh tình yêu giữa Shinomiya Kaguya và Shirogane Miyuki và những người xung quanh. Cuộc đấu trí để ép đối phương tỏ tình giữa hai thiên tài mang tới những giây phút lãng mạng và vài hiểu lầm hài hước.</p>","type":"hoathinh","status":"completed","thumb_url":"http://img.ophim1.cc/uploads/movies/kaguya-sama-cuoc-chien-to-tinh-ultra-romantic-thumb.jpg","is_copyright":"off","sub_docquyen":"off","trailer_url":"https://www.youtube.com/watch?v=63EGIGCxhYI","time":"25 phút/tập","episode_current":"Hoàn Tất (13/13)","episode_total":"13 Tập","quality":"HD","lang":"Vietsub","notify":"","showtimes":"","slug":"kaguya-sama-cuoc-chien-to-tinh-ultra-romantic","year":2022,"actor":[""],"director":[""],"category":[{"name":"Hài Hước"}],"country":[{"name":"Nhật Bản"}],"chieurap":false,"poster_url":"http://img.ophim1.cc/uploads/movies/kaguya-sama-cuoc-chien-to-tinh-ultra-romantic-poster.jpg"},"episodes":[{"server_name":"Vietsub #1","server_data":[{"name":"1","slug":"1","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 1 - Iino Miko muốn được thư giãn. Kaguya-sama không nhận ra. Fujiwara Chika muốn chiến đấu.","link_embed":"https://hd.1080phim.com/share/672cf3025399742b1a047c8dc6b1e992","link_m3u8":"https://hd.1080phim.com/20220426/8615_88cdfd01/index.m3u8"},{"name":"2","slug":"2","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 2 - Shirogane muốn giảng hòa - Kaguya-sama muốn đưa hội trưởng ra - Kaguya-sama muốn cản trở","link_embed":"https://hd.1080phim.com/share/64517d8435994992e682b3e4aa0a0661","link_m3u8":"https://hd.1080phim.com/20220426/8621_59463c2c/index.m3u8"},{"name":"3","slug":"3","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 3 - Kashiwagi Nagisa muốn định tội - Shijou Maki muốn làm gì đó - Shirogane muốn được tin tưởng","link_embed":"https://hd.1080phim.com/share/ea4b47f29f0030a6162b40662ff91c70","link_m3u8":"https://hd.1080phim.com/20220426/8616_cd06dc87/index.m3u8"},{"name":"4","slug":"4","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 4 - Thử thách khó khăn của Kaguya-sama, vỏ ốc của chim én (Phần một) - Ishigami muốn đáp lại - Fujiwara","link_embed":"https://kd.hd-bophim.com/share/70431e77d378d760c3c5456519f06efe","link_m3u8":"https://kd.hd-bophim.com/20220506/11059_3586d75b/index.m3u8"},{"name":"5","slug":"5","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 5 - Fujiwara Chika muốn khắc ghi - Hayasaka Ai muốn trò chuyện - Shijou Maki muốn dựa dẫm","link_embed":"https://kd.hd-bophim.com/share/37c691988cb0a6f0fdc8cc41f6ede4f1","link_m3u8":"https://kd.hd-bophim.com/20220506/11060_03e44b3d/index.m3u8"},{"name":"6","slug":"6","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 6 - Hội học sinh muốn tiến bước - Shirogane Miyuki muốn khiến đối phương tỏ tình 2 - Shirogane Miyuki mu","link_embed":"https://kd.hd-bophim.com/share/7818e42b0e7cbc2af4feed7bcfb238d4","link_m3u8":"https://kd.hd-bophim.com/20220514/11896_8c2c48ba/index.m3u8"},{"name":"7","slug":"7","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 7 - Iino Miko không để ai yêu 1 - Muốn kể về lễ hội văn hóa - Shirogane Miyuki muốn thổi phồng","link_embed":"https://kd.hd-bophim.com/share/35fcfa9e4c022b77e94c0c09a10690c8","link_m3u8":"https://kd.hd-bophim.com/20220521/12297_9d6fa5a1/index.m3u8"},{"name":"8","slug":"8","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 8 - Shirogane Kei muốn khoe khoang - Chuyện về Shinomiya Kaguya 2 - Kaguya-sama muốn tỏ tình","link_embed":"https://kd.hd-bophim.com/share/0d3350e2519bca2aa09823ebbfd3d5ed","link_m3u8":"https://kd.hd-bophim.com/20220527/12905_25846785/index.m3u8"},{"name":"9","slug":"9","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 9 - Mùa xuân của học sinh năm nhất - Lễ hội văn hóa của Kaguya-sama - Lễ hội văn hóa của Ishigami Yuu","link_embed":"https://kd.hd-bophim.com/share/065982e894fcde21153454b2ea4b2a8a","link_m3u8":"https://kd.hd-bophim.com/20220604/13431_9e140630/index.m3u8"},{"name":"10","slug":"10","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 10 - Maihara Kozue muốn chơi đùa - Fujiwara Chika muốn phá đám - Lễ hội văn hóa của Shirogane Miyuki","link_embed":"https://kd.hd-bophim.com/share/4132e96a90534adcb9ecdc09e73d10d7","link_m3u8":"https://kd.hd-bophim.com/20220610/13933_0217ea29/index.m3u8"},{"name":"11","slug":"11","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 11 - Shirogane Miyuki muốn khiến đối phương tỏ tình 4 - Koyasu Tsubame muốn từ chối - Shirogane Miyuki mu","link_embed":"https://kd.hd-bophim.com/share/544a66d5696a6e07b69dc8df98d6f825","link_m3u8":"https://kd.hd-bophim.com/20220617/14828_8b64855f/index.m3u8"},{"name":"12","slug":"12","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 12 - Kaguya-sama muốn tỏ tình 2 - Kaguya-sama muốn tỏ tình 3 - Hai lời tỏ tình - Phần đầu","link_embed":"https://kd.hd-bophim.com/share/5ff37811dd20fbf31dc7b9abf72a9754","link_m3u8":"https://kd.hd-bophim.com/20220625/15652_bdb1c76f/index.m3u8"},{"name":"13","slug":"13","filename":"Kaguya-sama: Cuộc Chiến Tỏ Tình - Ultra Romantic Tập 13 - Hai lời tỏ tình - Phần sau - Shuuchiin đêm lễ hội","link_embed":"https://kd.hd-bophim.com/share/118cb34246732bc8a609b09ab8221c4d","link_m3u8":"https://kd.hd-bophim.com/20220625/15653_5f7bf598/index.m3u8"}]}]}`
+var api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse = JSON.parse(api_kaguya_sama_wa_kokurasetai_ultra_romantic)
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t1()
+{
+    var tap = 1;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t2()
+{
+    var tap = 2;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t3()
+{
+    var tap = 3;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t4()
+{
+    var tap = 4;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t5()
+{
+    var tap = 5;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t6()
+{
+    var tap = 6;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t7()
+{
+    var tap = 7;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t8()
+{
+    var tap = 8;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t9()
+{
+    var tap = 9;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t10()
+{
+    var tap = 10;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t11()
+{
+    var tap = 11;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t12()
+{
+    var tap = 12;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
+}
+
+function kaguya_sama_wa_kokurasetai_ultra_romantic_p1_t13()
+{
+    var tap = 13;
+    var getTap = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].name
+    var getLink = api_kaguya_sama_wa_kokurasetai_ultra_romantic_parse.episodes[0].server_data[tap-1].link_embed
+    var getBtn = document.querySelectorAll(`.btn-controller-${tap}`)
+    var getMovieScreen = document.querySelectorAll(`.movie-screen`)
+    var getMovieEpisode = document.querySelectorAll(`.movie-episode`)
+
+    if (isMobile == false) {
+        getMovieScreen[0].setAttribute("src", getLink)
+        getBtn[0].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[0].innerText = getTap
+    }
+
+    else if (isMobile == true) {
+        getMovieScreen[1].setAttribute("src", getLink)
+        getBtn[1].className = `btn btn-success btn-controller-${tap} active`
+        getMovieEpisode[1].innerText = getTap
+    }
 }
