@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <!--Navigation bar-->
+        <div id="header"></div>
+        <script>$(function () {$("#header").load("/nav.html");});</script>
+        <!-- End navigation bar -->
+
+        <div class="content">
+            <div class="page-name">
+                <h1>Trang chủ</h1>
+            </div>
+
+            <ul class="home-navigation">
+                <h2>Điều hướng</h2>
+                <li><a class="btn btn-secondary margin-top-10px" href="/">Trang chủ</a></li>
+                <li><a class="btn btn-secondary margin-top-10px" href="/movie/page1/">Anime</a></li>
+                <li><a onclick="tinh_nang_chua_mo()" class="btn btn-secondary margin-top-10px" href="">Tìm kiếm</a></li>
+                <li><a class="btn btn-secondary margin-top-10px" href="/about-this-web/">Về web này</a></li>
+            </ul>
+
+            <ul class="version"><h2>Version 1.0</h2></ul>
+            <ul class="update"><h2>Update 7/12/2022 (beta version)</h2></ul>
+        </div>
+    </div>
+</body>
+
+</html>
