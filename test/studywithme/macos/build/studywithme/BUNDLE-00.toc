@@ -1,3 +1,0 @@
-([('studywithme',
-   '/Users/imac/Documents/LIVE_PROJECT/test/studywithme/macos/dist/studywithme',
-   'EXECUTABLE')],)
