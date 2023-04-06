@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+    <script src="/assets/js/jquery.js"></script>
+</head>
+
+<body bs-data-theme="dark">
+    <div class="main">
+        <!--Navigation bar-->
+        <div id="header"></div>
+        <script>$(function () {$("#header").load("/nav.html");});</script>
+        <!-- End navigation bar -->
+
+        <div class="content">
+            <div class="page-name">
+                <h1>Về trang web này</h1>
+            </div>
+
+            <ul>
+                <h1>Basic information</h1>
+                <li>Developer: Ho Tuan Kiet</li>
+                <li>Designer: none</li>
+            </ul>
+
+            <ul>
+                <h1>Copy Right ©️</h1>
+                <li>Movie in this site: <a href="https://ophim1.cc/api-document/" target="_blank">OPhim</a></li>
+            </ul>
+
+            <ul>
+                <h1>Khiếu nại / góp ý.</h1>
+                <button onclick="khieu_nai_gop_y()" class="btn btn-outline-secondary" id="kn-gy-btn">Khiếu nại, góp ý.</button>
+                <iframe style="display: none;" id="kn-gy" src="" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdA6gvibX0IzaeeQ2vPEzdWVCT87rFyvbyZZr2LP6dYWv81hQ/viewform?embedded=true" width="640" height="813" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe> -->
+            </ul>
+
+            <ul>
+                <h1>Lưu ý:</h1>
+                <p>Một số thiết bị có màn hình với tỉ lệ đặc biệt thì web vẫn chưa hỗ trợ hoàn toàn.</p>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
